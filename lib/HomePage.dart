@@ -19,10 +19,12 @@ class HomePage extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Obx(() => Text(
-                  'Click: ${C.count}',
-                  style: TextStyle(color: Colors.brown),
-                )),
+            Obx(
+              () => Text(
+                'Click: ${C.count}',
+                style: TextStyle(color: Colors.brown, fontSize: 30),
+              ),
+            ),
             SizedBox(height: 200),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,

@@ -1,12 +1,16 @@
 import 'package:get/get.dart';
 
 class CounterStateController extends GetxController {
-  var count = 0.obs; //obs=observation
+  var count = 0.obs;
+  //obs=observation
+
   increment() {
     count++;
   }
 
   decrement() {
-    count--;
+    if (count > 0) {
+      count--;
+    }
   }
 }
