@@ -40,6 +40,7 @@ class HomePage extends StatelessWidget {
                     C.increment();
                   },
                   child: Icon(Icons.add),
+                  //
                 )
               ],
             )
